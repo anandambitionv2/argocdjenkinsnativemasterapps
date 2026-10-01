@@ -12,7 +12,14 @@ spec:
     - repoURL: https://raw.githubusercontent.com/jenkinsci/kubernetes-operator/master/chart
       chart: jenkins-operator
       targetRevision: 0.9.0-beta2
-      
+      helm:
+        valueFiles:
+          - $jenkins/jenkins/values.yaml
+
+   
+    - repoURL: https://github.com/anandambitionv2/jenkinsnativeoverride.git
+      targetRevision: main
+      ref: jenkins
     
 
    
