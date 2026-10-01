@@ -14,7 +14,7 @@ spec:
       targetRevision: 0.9.0-beta2
       helm:
         valueFiles:
-          - $jenkins/jenkins/values.yaml
+          - $jenkins/jenkins/values.yml
 
    
     - repoURL: https://github.com/anandambitionv2/jenkinsnativeoverride.git
